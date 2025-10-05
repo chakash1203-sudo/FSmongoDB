@@ -1,0 +1,11 @@
+use schoolDB
+db.courses.insertOne({
+  "name": "Computer Science"
+})
+db.courses.find({})
+db.students.insertOne({
+  "name": "Rohan Sharma",
+  "age": 20,
+  "course": "Computer Science"
+})
+db.students.find({})
