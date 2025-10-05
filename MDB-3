@@ -1,0 +1,14 @@
+use eCommerceDB
+db.products.insertOne({
+  "name": "Laptop Pro",
+  "price": 85000,
+  "category": "Electronics",
+  "reviews": [
+    {
+      "user": "Alice",
+      "rating": 5,
+      "comment": "Amazing performance!"
+    }
+  ]
+})
+db.products.find({ "category": "Electronics" })
