@@ -1,0 +1,6 @@
+use productDB
+db.products.insertOne({
+  "name": "Laptop Stand",
+  "price": 1200,
+  "category": "Accessories"
+})
